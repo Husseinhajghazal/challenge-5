@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,700&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.logo {
+  margin: 4rem 0 2.5rem;
+}
+
+h1 {
+  color: var(--Gray);
+}
+
+h1 span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+p {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+form {
+  width: 39.375rem;
+  margin-bottom: 5rem;
+}
+
+form input,
+form input:focus {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--Pale-Blue);
+  margin-right: 1rem;
+  outline: none;
+}
+
+form button {
+  padding: 0.7rem 3rem;
+  border: none;
+  color: #fff;
+  background-color: var(--Blue);
+  width: 30%;
+  box-shadow: 0px 2px 6px 1px hsl(223deg 87% 63% / 50%);
+}
+
+::placeholder {
+  color: var(--Pale-Blue);
+}
+
+.image {
+  max-width: 40rem;
+}
+
+small {
+  color: var(--Light-Red);
+}
+
+@media (max-width: 540px) {
+  form {
+    width: 25rem;
+  }
+  form input {
+    margin-bottom: 1rem;
+  }
+  .image {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 414px) {
+  form {
+    width: 20rem;
+  }
+  form input {
+    margin-bottom: 1rem;
+  }
+  .image {
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 280px) {
+  form {
+    width: 15rem;
+  }
+  .image {
+    max-width: 15rem;
+  }
+}
